@@ -1,6 +1,6 @@
 # Angular/TypeScript/C#/AJAX Multipage Sample
 
-This sample of code is meant to demonstrate how to use AngularJS with TypeScript to fetch data via AJAX in a C# MVC environment.
+This sample of code is meant to demonstrate how to use AngularJS with TypeScript to fetch data via AJAX in a C# MVC environment.  It also allows sending route data via AJAX to a method in C# BaseController that will find the route and redirect the user to that route.
 
 What is provided:
 - AngularJS Controller
