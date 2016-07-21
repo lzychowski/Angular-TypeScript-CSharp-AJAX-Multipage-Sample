@@ -11,3 +11,6 @@ What is provided:
 -- writing of route data into the HTML
 -- redirecting in MVC by accepting route data from AngularJS
 - HTML View with a simple RAZOR code that outputs route data from C# BaseController
+
+# Setup
+Full blog post coming soon at http://yolonerds.com
