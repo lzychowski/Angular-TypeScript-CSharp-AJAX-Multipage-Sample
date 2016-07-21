@@ -55,8 +55,14 @@ module App.Controllers {
 
 		public onLoadError(error: any): void {
 			console.log("onLoadError: " + JSON.stringify(error));
-			// handle error
-			return error;
+			
+			// on error redirect to a different view using RedirectService and GetRoute method in C# BaseController
+			setTimeout(() => {
+				this.redirectService.redirect(this.routeDictionaryService.generateData(("CustomerDisplayError"),
+					[
+						{ Key: "id", Value: Util.Obj.getValue(routeValueDictionary, "id") }
+					]));
+			}, 1000);
 		}
 	}
 }

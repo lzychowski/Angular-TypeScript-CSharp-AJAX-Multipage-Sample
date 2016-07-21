@@ -18,7 +18,6 @@ module App.Controllers {
 		protected routeDictionaryService: Util.RouteDictionaryService;
 		protected redirectService: Util.RedirectService;
 		protected routeValueDictionary: Interfaces.IKeyValuePair[];
-		protected perspectiveDictionaryService: Util.PerspectiveDictionaryService;
 
 		public static $inject = [
 			"$injector",
@@ -33,7 +32,6 @@ module App.Controllers {
 
 			this.http = $injector.get("$http");
 			this.routeDictionaryService = $injector.get("routeDictionaryService");
-			this.perspectiveDictionaryService = $injector.get("perspectiveDictionaryService");
 			this.redirectService = $injector.get("redirectService");
 
 			this.routeValueDictionary = routeValueDictionary;

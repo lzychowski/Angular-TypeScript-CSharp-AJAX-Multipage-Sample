@@ -16,5 +16,13 @@ namespace Web.Controllers
 			return View("~/CustomerDisplay.cshtml");
 		}
 
+		[HttpGet]
+		[Route("error", Name = "CustomerDisplayError")]
+		public ActionResult CustomerDisplayError(Guid id)
+		{
+			ViewBag.RouteValueDictionary = GetRouteData(Url);
+			return View("~/CustomerDisplayError.cshtml");
+		}
+
 	}
 }
